@@ -6,7 +6,6 @@ import glaw3 from "../../assets/glaw3.svg";
 import glaw4 from "../../assets/glaw4.svg";
 import md from "../../assets/md.svg";
 import { Menu, X } from "lucide-react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,9 +14,7 @@ import "swiper/css/pagination";
 export default function Header() {
     const [activeMenu, setActiveMenu] = useState("Главная");
     const [isOpen, setIsOpen] = useState(false);
-
     const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
-
     return (
         <header className="w-full bg-white px-4 py-3 shadow-md relative">
             <div className="max-w-[1200px] mx-auto flex items-center justify-between">
