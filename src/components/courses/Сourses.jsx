@@ -235,10 +235,8 @@ const renderCourseCard = (course, logAction) => (
                 <div className="absolute top-2 right-2 bg-white/80 rounded-md px-2 py-1">
                 </div>
                 <div className="absolute bottom-2 mb-3 mr-5 right-2 flex flex-col gap-2">
-
                     <img src={courl2} alt=""/>
                     <img src={courl3} alt=""/>
-
                 </div>
             </div>
         </div>
@@ -258,12 +256,10 @@ const renderCourseCard = (course, logAction) => (
                 <p className="text-sm mb-2">Для кого этот курс</p>
                 <div className="flex flex-wrap gap-2">
                     {course.tags.map((tag, index) => (
-
                         <span
                             key={index}
                             className={`text-xs px-3 pt-2 pr-5 pb-2 pl-5 rounded-full border ${tag === "Дизайнеры" ? 'border-black' : tag === "Frontend Разработчики" ? 'border-[rgba(255,208,44,1)]' : tag === "Backend Разработчики" ? 'border-[rgba(35,175,206,1)]' : 'border-gray-300'}`}
                             onClick={() => logAction(`Tag ${tag} clicked for course ${course.id}`)}
-
                         >
     {tag}
 </span>
@@ -279,7 +275,7 @@ const renderCourseCard = (course, logAction) => (
                     Подробно
                 </button>
 
-    </div>
+           </div>
         </div>
     </div>
 
