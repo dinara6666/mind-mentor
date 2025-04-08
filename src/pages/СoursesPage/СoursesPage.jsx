@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Router = () => {
+const СoursesPage = () => {
     return (
         <div>
-
-
+            ourses
         </div>
     );
 };
 
-export default Router;
+export default СoursesPage;
