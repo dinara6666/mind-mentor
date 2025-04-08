@@ -30,8 +30,6 @@ function Hero() {
           <button className="w-full sm:w-[158px] h-[64px] bg-black text-white rounded-[24px] mt-6 flex items-center justify-center shadow-md hover:bg-[#333] transition duration-300  ml-[20px]">
             Подобрать
           </button>
-
-          
         </div>
       </div>
     </div>
