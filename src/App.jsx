@@ -1,4 +1,12 @@
 import React from 'react';
+import Mentor from './Mentor/Mentor';
+import Project from './Projects/Project';
+const App = () => {
+    return (
+        <div>
+            <div><Mentor/>
+            <Project/>
+            </div>
 import Hero from './components/hero/Hero';
 import Card from './components/card/Card';
 import Hero2 from './components/hero2/Hero2';
