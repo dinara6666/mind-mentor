@@ -7,6 +7,7 @@ import MentorPage from "./pages/mentorpage/MentorPage.jsx";
 import ProjectsPage from "./pages/ProjectPage/ProjectsPage.jsx";
 import СoursesPage from "./pages/СoursesPage/СoursesPage.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
+import UsersLayout from './Layout/Layout/UsersLayout.jsx';
 
 
 
@@ -20,6 +21,11 @@ function App() {
                     <Route path="projects" element={<ProjectsPage />} />
                     <Route path="courses" element={<СoursesPage />} />
                 </Route>
+
+                
+                <Route path="users"  element={<UsersLayout />}/>
+                  
+               
             </Routes>
         </div>
     );
