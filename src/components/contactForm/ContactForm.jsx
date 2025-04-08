@@ -1,7 +1,6 @@
 import React from 'react';
 import './ContactForm.css';
 import Img from '../../assets/images/img.png';
-
 import Vector from '../../assets/icons/vector-icon.svg';
 
 const ContactForm = () => {
