@@ -27,7 +27,9 @@
   
       div {
         display: flex;
-        width: 200px;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
         height: 56px;
         gap: 15px;
   
@@ -137,17 +139,9 @@
     color: #333;
   }
   
-  @media (max-width: 768px) {
-    .mentor-cart {
-      width: 352px;
-      height: 586px;
-    }
-  }
   
   @media (max-width: 760px) {
-    .projects {
-      margin-top: 1200px !important;
-    }
+  
     .mentor-btn button {
       color: white;
     }
@@ -156,8 +150,6 @@
       flex-direction: column;
     }
     .mentor-cart {
-      max-width: 338px !important;
-      height: 583px !important;
   
       p,
       h1,

@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 
 const Project = () => {
   const swiperRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 640);
 
   const handleResize = () => {
     setIsMobile(window.innerWidth >= 760);
@@ -36,7 +36,7 @@ const Project = () => {
       <div className='projects-header'>
         <h1>Проекты</h1>
         <div className="projects-controls">
-          <h4>Посмотреть все <IoPlayOutline /></h4>
+          <h4 className='mt-[20px]'>Посмотреть все <IoPlayOutline /></h4>
           {isMobile && (
             <>
               <button onClick={handlePrev} aria-label="Previous slide">
@@ -53,7 +53,7 @@ const Project = () => {
       <div className="projects-body">
         {isMobile ? (
           <Swiper
-            modules={[Pagination]}
+            // modules={[Pagination]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             spaceBetween={30}
             slidesPerView={3}
@@ -84,7 +84,7 @@ const Project = () => {
           </div>
         )}
       </div>
-      <div className='item-mentor-btn'>
+      <div className='item-mentor-btn '>
       <button>Показать все</button>
       </div>
     </div>

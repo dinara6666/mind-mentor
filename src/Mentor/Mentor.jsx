@@ -7,12 +7,16 @@ import { mentors } from './Data/Data';
 import { IoPlayOutline } from "react-icons/io5";
 import { RiPlayReverseLargeLine } from "react-icons/ri";
 
-import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Mentor = () => {
   const swiperRef = useRef(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 640);
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 640);
 
   const handleResize = () => {
     setIsMobile(window.innerWidth >= 760);
@@ -53,7 +57,7 @@ const Mentor = () => {
       <div className="Mentors">
         {isMobile ? (
           <Swiper
-            modules={[Pagination]}
+            // modules={[Pagination]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             spaceBetween={30}
             slidesPerView={3}
@@ -70,7 +74,7 @@ const Mentor = () => {
               480: {
                 slidesPerView: 1,
               },
-              760: {
+              770: {
                 slidesPerView: 2,
               },
               1024: {
@@ -89,13 +93,11 @@ const Mentor = () => {
           <div className="mentor-grid">
             {mentors.map((mentor) => (
               <MentorCart key={mentor.id} mentor={mentor} />
-            ))}
-          </div>
-        )}
+            ))} 
+           </div> 
+         )} 
       </div>
-      <div className='item-mentor-btn'>
-      <button>Показать все</button>
-      </div>
+      <button className='item-mentor-btn w-[100%]'>Показать все</button>
     </div>
   );
 };
