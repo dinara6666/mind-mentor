@@ -282,7 +282,6 @@ const renderCourseCard = (course, logAction) => (
     </div>
            </div>
         </div>
-    </div>
 
         )
 
