@@ -31,7 +31,7 @@ const ProjectCart = ({ project }) => {
         </div>
         <div className="project-footer">
           <p className="project-price">{project.price.toLocaleString()} <span>C</span> </p>
-          <button className="project-btn">Подробно</button>
+          <button className="project-btn">Подробнee</button>
         </div>
     </div>
   );

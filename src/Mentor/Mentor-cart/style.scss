@@ -152,17 +152,29 @@ text-align: left;
             cursor: pointer;
             width: 100%;
             height: 64px;
-            ul{
-                li{
-                    color: rgb(0, 0, 0);
-font-family: Jost;
-font-size: 24px;
+             .project-price {
+    font-family: Jost;
 font-weight: 700;
+font-size: 24px !important;
 line-height: 120%;
 letter-spacing: 0px;
-text-align: left;
-                }
-            }
+text-decoration-skip-ink: auto;
+  span{
+    text-decoration: underline;
+  }
+  }
+ .project-price {
+    font-family: Jost;
+font-weight: 700;
+font-size: 24px;
+line-height: 120%;
+letter-spacing: 0px;
+text-decoration-skip-ink: auto;
+  span{
+    text-decoration: underline;
+  }
+  }
+
             button{
                 cursor: pointer;
                 background-color: rgb(45, 45, 45);
