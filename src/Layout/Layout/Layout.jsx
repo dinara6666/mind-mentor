@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer.jsx";
 import Header from "../Header/Header.jsx";
 import {Outlet} from "react-router";
 
+
 const Layout  = () => {
     return (
         <div>
