@@ -30,6 +30,16 @@ function App() {
                 <Reviews/>
                 <ContactForm/>
             </div>
+import { Routes, Route } from 'react-router';
+import Layout from "../src/Layout/Layout/Layout.jsx";
+import MentorPage from "./pages/mentorpage/MentorPage.jsx";
+import ProjectsPage from "./pages/ProjectPage/ProjectsPage.jsx";
+import СoursesPage from "./pages/СoursesPage/СoursesPage.jsx";
+import HomePage from "./pages/HomePage/HomePage.jsx";
+
+function App() {
+    return (
+        <div>
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<HomePage />} />

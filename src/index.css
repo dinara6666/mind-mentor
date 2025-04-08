@@ -6,6 +6,7 @@
     width: 1280px;
     margin: auto;
 }
+
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }

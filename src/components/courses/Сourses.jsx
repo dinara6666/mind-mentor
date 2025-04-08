@@ -238,7 +238,8 @@ const renderCourseCard = (course, logAction) => (
 
                     <img src={courl2} alt=""/>
                     <img src={courl3} alt=""/>
-
+                    <img src={courl2} alt=""/>
+                    <img src={courl3} alt=""/>
                 </div>
             </div>
         </div>
@@ -263,7 +264,6 @@ const renderCourseCard = (course, logAction) => (
                             key={index}
                             className={`text-xs px-3 pt-2 pr-5 pb-2 pl-5 rounded-full border ${tag === "Дизайнеры" ? 'border-black' : tag === "Frontend Разработчики" ? 'border-[rgba(255,208,44,1)]' : tag === "Backend Разработчики" ? 'border-[rgba(35,175,206,1)]' : 'border-gray-300'}`}
                             onClick={() => logAction(`Tag ${tag} clicked for course ${course.id}`)}
-
                         >
     {tag}
 </span>
@@ -280,6 +280,7 @@ const renderCourseCard = (course, logAction) => (
                 </button>
 
     </div>
+           </div>
         </div>
     </div>
 

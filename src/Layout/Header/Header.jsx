@@ -18,6 +18,11 @@ export default function Header() {
 
     const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
 
+
+export default function Header() {
+    const [activeMenu, setActiveMenu] = useState("Главная");
+    const [isOpen, setIsOpen] = useState(false);
+    const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
     return (
         <header className="w-full bg-white px-4 py-3 shadow-md relative">
             <div className="max-w-[1200px] mx-auto flex items-center justify-between">
@@ -56,7 +61,31 @@ export default function Header() {
                         </Link>
                     ))}
                 </nav>
-
+                <nav className="hidden lg:flex gap-12 font-semibold ml-10">
+                    {menuItems.map((item) => (
+                        <Link
+                            to={
+                                item === "Менторы"
+                                    ? "/mentors"
+                                    : item === "Главная"
+                                        ? "/"
+                                        : item === "Проекты"
+                                            ? "/projects"
+                                            : "/courses"
+                            }
+                            key={item}
+                        >
+                            <button
+                                onClick={() => setActiveMenu(item)}
+                                className={`px-4 py-1.5 rounded transition ${
+                                    activeMenu === item ? "bg-gray-800 text-white" : "text-black"
+                                }`}
+                            >
+                                {item}
+                            </button>
+                        </Link>
+                    ))}
+                </nav>
                 <div className="flex items-center gap-3">
                     <div className="bg-black rounded-full w-8 h-8 flex items-center justify-center">
                         <img src={glaw1} alt="calendar" className="w-[35px]" />
