@@ -3,6 +3,8 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './Reviews.css';
+import ButtonPrev from '../../assets/icons/button-prev.svg';
+import ButtonNext from '../../assets/icons/button-next.svg';
 
 const Reviews = () => {
     const swiperRef = useRef(null);
@@ -17,20 +19,29 @@ const Reviews = () => {
                         className="custom-button-prev"
                         onClick={() => swiperRef.current.swiper.slidePrev()}
                     >
-
+                        <img src={ButtonNext} alt=""/>
                     </div>
                     <div
                         className="custom-button-next"
                         onClick={() => swiperRef.current.swiper.slideNext()}
                     >
-
+                        <img src={ButtonPrev} alt=""/>
                     </div>
                 </div>
             </div>
 
             <Swiper
                 ref={swiperRef}
-                slidesPerView={3.3}
+                // slidesPerView={3.3}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3.3,
+                    },
+                }}
+
                 spaceBetween={30}
                 centeredSlides={true}
                 loop={true}
