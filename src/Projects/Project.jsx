@@ -53,7 +53,7 @@ const Project = () => {
       <div className="projects-body">
         {isMobile ? (
           <Swiper
-            modules={[Pagination]}
+            // modules={[Pagination]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             spaceBetween={30}
             slidesPerView={3}

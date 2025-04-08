@@ -136,15 +136,19 @@ h4{
     color: #333;
   }
   @media (max-width: 768px) {
-    .mentor-cart{
-      // width: 352px;
-      // height: 586px;
-    }
+    
     .swiper-wrapper {
       display: flex;
       flex-wrap: wrap;
     }
   }
+  @media (max-width: 770px) {
+    .swiper-slide {
+      width: 100% !important;
+      // background-color: red;
+    }
+  }
+  
   @media (max-width: 480px) {
     .item-mentor-btn{
       display: block !important;
@@ -165,8 +169,8 @@ h4{
       flex-direction: column;
     }
     .mentor-cart{
-      max-width: 380px !important;
-      height: 583px !important;
+      // max-width: 380px !important;
+      // height: 583px !important;
       p, h1, h2, h3, h4, h5, h6 {
         letter-spacing: -0.2px;
         font-size:13px !important;

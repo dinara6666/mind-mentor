@@ -139,12 +139,6 @@
     color: #333;
   }
   
-  @media (max-width: 768px) {
-    .mentor-cart {
-      width: 352px;
-      height: 586px;
-    }
-  }
   
   @media (max-width: 760px) {
   
@@ -156,8 +150,6 @@
       flex-direction: column;
     }
     .mentor-cart {
-      max-width: 338px !important;
-      height: 583px !important;
   
       p,
       h1,

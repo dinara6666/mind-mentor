@@ -57,7 +57,7 @@ const Mentor = () => {
       <div className="Mentors">
         {isMobile ? (
           <Swiper
-            modules={[Pagination]}
+            // modules={[Pagination]}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             spaceBetween={30}
             slidesPerView={3}
@@ -74,7 +74,7 @@ const Mentor = () => {
               480: {
                 slidesPerView: 1,
               },
-              760: {
+              770: {
                 slidesPerView: 2,
               },
               1024: {

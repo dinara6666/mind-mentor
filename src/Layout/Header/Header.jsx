@@ -19,10 +19,10 @@ export default function Header() {
     const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
 
 
-export default function Header() {
-    const [activeMenu, setActiveMenu] = useState("Главная");
-    const [isOpen, setIsOpen] = useState(false);
-    const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
+// export default function Header() {
+//     const [activeMenu, setActiveMenu] = useState("Главная");
+//     const [isOpen, setIsOpen] = useState(false);
+//     const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
     return (
         <header className="w-full bg-white px-4 py-3 shadow-md relative">
             <div className="max-w-[1200px] mx-auto flex items-center justify-between">
