@@ -12,11 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function Header() {
-    const [activeMenu, setActiveMenu] = useState("Главная");
-    const [isOpen, setIsOpen] = useState(false);
 
-    const menuItems = ["Главная", "Курсы", "Менторы", "Проекты"];
 
 
 // export default function Header() {

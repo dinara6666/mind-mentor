@@ -35,7 +35,7 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
                 <Reviews/>
                 <ContactForm/>
             </div> */}
-
+import UsersLayout from './Layout/Layout/UsersLayout.jsx';
  function App() {
     return (
         <div>
@@ -46,6 +46,11 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
                     <Route path="projects" element={<ProjectsPage />} />
                     {/* <Route path="courses" element={<СoursesPage />} /> */}
                 </Route>
+
+                
+                <Route path="users"  element={<UsersLayout />}/>
+                  
+               
             </Routes>
         </div>
     );
