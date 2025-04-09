@@ -10,8 +10,8 @@ import Project from './Projects/Project';
 import Hero from './components/hero/Hero';
 import Card from './components/card/Card';
 import Hero2 from './components/hero2/Hero2';
-import Reviews from "./component1/reviews/Reviews.jsx";
-import ContactForm from "./component1/contactForm/ContactForm.jsx";
+import Reviews from "./components/reviews/Reviews.jsx";
+import ContactForm from "./components/contactForm/ContactForm.jsx";
 import { Routes, Route } from 'react-router';
 import Layout from "../src/Layout/Layout/Layout.jsx";
 import MentorPage from "./pages/mentorpage/MentorPage.jsx";
@@ -32,6 +32,7 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
                 <Card/>
                 <Hero2/>
             </div>
+            <div>
                 <Reviews/>
                 <ContactForm/>
             </div> */}

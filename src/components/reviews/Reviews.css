@@ -6,7 +6,7 @@
     height: 56px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto 40px;
+    margin: 30px auto 40px;
 }
 
 .reviews-header h2 {
@@ -35,13 +35,10 @@
 
 .reviews-container {
     width: 1280px;
-    /*padding: 40px 50px;*/
-    /*border: 1px solid red;*/
     margin: 0 auto;
 }
 
 .mySwiper {
-    /*border: 1px solid red;*/
     display: flex;
     gap: 10px;
 }
@@ -72,3 +69,22 @@
         background: #d3d3d3;
     }
 }
+
+
+@media (max-width: 768px) {
+    .reviews-header {
+        width: 728px;
+    }
+
+    .mySwiper {
+        width: 728px;
+    }
+
+    .swiper-card {
+        width: 352px;
+        height: 186px;
+    }
+}
+
+
+

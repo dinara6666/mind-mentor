@@ -102,5 +102,30 @@ input::placeholder {
 }
 
 
+@media (max-width: 768px) {
+    .contact-form {
+        display: block;
 
+        img {
+            width: 728px;
+        }
+
+        .contact-form__content {
+            width: 728px;
+            border-radius: 16px;
+
+            .contact-form__inputs-row {
+                .contact-form__input {
+                    width: 334px;
+                    height: 64px;
+                }
+            }
+
+            .contact-form__inputs-column {
+                width: 680px;
+                height: 121px;
+            }
+        }
+    }
+}
 

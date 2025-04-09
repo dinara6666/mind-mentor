@@ -1,14 +1,13 @@
 import React from 'react';
 import './ContactForm.css';
 import Img from '../../assets/images/img.png';
-
 import Vector from '../../assets/icons/vector-icon.svg';
 
 const ContactForm = () => {
     return (
         <div className="contact-form">
             <div className="contact-form__image">
-                <img src={Img} alt="Контакт картинка"/>
+                <img src={Img} alt="картинка"/>
             </div>
 
             <div className="contact-form__content">
